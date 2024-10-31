@@ -1,0 +1,148 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ff69b4;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #ff6347;
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+h3 {
+    color: #4682b4;
+    margin-left: 20px;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #444;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+nav {
+    background-color: #4682b4;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffdab9;
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.plan-year {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan-year:hover {
+    transform: translateY(-10px);
+    background-color: #f5f5f5;
+}
+
+footer {
+    background-color: #4682b4;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+.plan-year h3 {
+    background-color: #ffeb3b;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    position: relative;
+    padding-left: 20px;
+}
+
+li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ff6347;
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+    }
+}
